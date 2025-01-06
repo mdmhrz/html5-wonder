@@ -1,0 +1,44 @@
+.square{
+    padding: 10px;
+    background-color: lightblue;
+    margin: 10px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    margin: 15px;
+}
+
+.first-box{
+    background-color: blueviolet;
+    color: white;
+}
+
+.second-box{
+    background-color: brown;
+    color: white;
+    position: relative;
+}
+
+.second-box h1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.third-box{
+    background-color: darkcyan;
+    color: white;
+}
+
+
+
+section{
+    display: flex;
+}
+
+.third-box h1{
+    background-color: chartreuse;
+    color: blueviolet;
+    border-radius: 5px;
+
+}

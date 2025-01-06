@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form for Purchase</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins, arial;
+            color: hsl(0, 7%, 63%);
+        }
+        
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input::placeholder{
+            color: rgb(148, 147, 147);
+            padding: 5px;
+            width: 100%;
+        }
+
+        body{
+            background-color: rgba(55, 12, 213, 0);
+            width: 100%;
+            height: 100vh;
+        }
+
+        main{
+            width: 60%;
+            height: auto;
+            background-color: rgb(14, 2, 56);
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.15);
+            margin: auto;
+            background-color: rgb(2, 2, 86) ;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        fieldset{
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        legend{
+            font-weight: 700;
+        }
+
+        textarea{
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h2>Please fill up this form</h2>
+        <form action="">
+            <label for="name"> Your Name:
+                <input type="text" id="name" placeholder="Your Name">
+            </label>
+            <label for="email"> Your Email:
+                <input type="email" name="email" id="email" placeholder="Your Email">
+            </label>
+            <label for="mobile">Mobile:
+                <input type="number" id="mobile" placeholder="Your Mobile Number">
+            </label>
+            <fieldset>
+                <legend>50% Sale. Pick any One</legend>
+                <label for="photocopy">
+                    <input type="radio" name="sale" id="photocopy"> Photocopy
+                </label>
+                <label for="print">
+                    <input type="radio" name="sale" id="print"> Print
+                </label>
+                <label for="typing">
+                    <input type="radio" name="sale" id="typing"> Typing
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Select Your Time Slot</legend>
+                <select name="timeslot" id="">
+                    <option value="">10AM-11 AM</option>
+                    <option value="">11AM-12PM</option>
+                    <option value="">12PM-01PM</option>
+                    <option value="">03PM-04PM</option>
+                    
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Pick Your Paper Type</legend>
+                <label for="eighty-gsm">
+                    <input type="checkbox" name="paper" id=""> 80 GSM
+                </label>
+                <label for="100gsm">
+                    <input type="checkbox" name="100gsm" id=""> 100 GSM
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Special Instruction</legend>
+                <textarea name="" id=""></textarea>
+            </fieldset>
+            <br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
